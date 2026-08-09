@@ -1,0 +1,27 @@
+  /* ============ RESPONSIVE ============ */
+  @media (max-width: 1024px){
+    .hero-inner{ grid-template-columns: 1fr; }
+    .hero{ padding-top: 7rem; }
+    .value-grid{ grid-template-columns: repeat(2,1fr); }
+    .services-grid{ grid-template-columns: repeat(2,1fr); }
+    .project{ grid-template-columns: 1fr; }
+    .project:nth-child(even){ direction: ltr; }
+    .about-inner{ grid-template-columns: 1fr; }
+    .about-visual{ order:-1; max-width: 420px; margin: 0 auto; }
+    .diff-grid{ grid-template-columns: 1fr; }
+  }
+  @media (max-width: 720px){
+    .nav-desktop{ display:none; }
+    .menu-toggle{ display:flex; }
+    .value-grid{ grid-template-columns: 1fr; }
+    .services-grid{ grid-template-columns: 1fr; }
+    .footer-top{ flex-direction:column; }
+    .code-window__body{ font-size:0.78rem; }
+    .hero-ctas .btn{ flex:1; justify-content:center; }
+    .header-actions .btn{ display:none; }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+    html{ scroll-behavior:auto; }
+  }

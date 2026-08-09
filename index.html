@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Studio — Criação e Desenvolvimento de Sites Premium</title>
+    <meta name="description"
+        content="A Nexus Studio transforma ideias em experiências digitais. Criação de sites institucionais, landing pages, redesign e e-commerce com design premium e performance elevada.">
+    <meta name="keywords"
+        content="criação de sites, desenvolvimento web, criação de landing page, web design, desenvolvimento de sites, criação de site profissional, desenvolvimento web em Santa Catarina">
+    <meta property="og:title" content="Nexus Studio — Transformamos ideias em sites">
+    <meta property="og:description"
+        content="Sites modernos, rápidos e estratégicos para empresas que querem se destacar no digital.">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#0A0A0C">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="icon"
+        href="./assets/img/Icone-nexus.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Nexus Studio de Desenvolvimento Web",
+  "description": "Criação, desenvolvimento e redesign de sites e experiências digitais para empresas.",
+  "areaServed": "Santa Catarina, Brasil",
+  "telephone": "+55 47 99683-8914",
+  "sameAs": ["https://www.instagram.com/nexusweb.design/"]
+}
+</script>
+
+</head>
+
+<body>
+
+    <canvas id="aether-canvas"></canvas>
+
+    <header class="site-header" id="siteHeader">
+        <img src="./assets/img/Icone-nexus.svg" alt="Nexus Studio">
+        <nav class="nav-desktop" aria-label="Navegação principal">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#processo">Processo</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <a class="btn btn--primary btn--sm" data-magnetic
+                href="https://wa.me/5547996838914?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20meu%20site."
+                target="_blank" rel="noopener">Solicitar orçamento</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false"
+                aria-controls="mobileNav">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <line x1="4" y1="7" x2="20" y2="7" />
+                    <line x1="4" y1="12" x2="20" y2="12" />
+                    <line x1="4" y1="17" x2="20" y2="17" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <nav class="mobile-nav" id="mobileNav" aria-label="Navegação mobile">
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#processo">Processo</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+        <a class="btn btn--primary" href="https://wa.me/5547996838914" target="_blank" rel="noopener">Falar no
+            WhatsApp</a>
+    </nav>
+
+    <main>
+
+        <section class="hero" id="inicio">
+            <div class="hero-grid-bg" aria-hidden="true"></div>
+            <div class="hero-glow" aria-hidden="true"></div>
+            <div class="hero-inner">
+                <div>
+                    <p class="hero-eyebrow eyebrow">Nexus Studio · Web Design & Desenvolvimento</p>
+                    <h1 class="hero-title">
+                        <span class="line">Transformamos ideias</span>
+                        <span class="line">em <span class="accent-text">experiências</span></span>
+                        <span class="line">digitais.</span>
+                    </h1>
+                    <p class="hero-sub">Sites modernos, rápidos e estratégicos para empresas que querem se destacar no
+                        digital.</p>
+                    <div class="hero-ctas">
+                        <a class="btn btn--primary" data-magnetic
+                            href="https://wa.me/5547996838914?text=Ol%C3%A1!%20Quero%20criar%20meu%20site%20com%20a%20Nexus."
+                            target="_blank" rel="noopener">Quero meu site</a>
+                        <a class="btn btn--ghost" data-magnetic href="#projetos">Ver projetos</a>
+                    </div>
+                </div>
+                <div class="code-window">
+                    <div class="code-window__bar">
+                        <div class="code-window__dots"><span class="dot dot--r"></span><span
+                                class="dot dot--y"></span><span class="dot dot--g"></span></div>
+                        <span class="code-window__title">nexus.studio — build.ts</span>
+                    </div>
+                    <div class="code-window__body">
+                        <div class="code-line"><span class="tok-key">const</span> <span
+                                class="tok-var">experiencia</span> <span class="tok-punc">=</span> <span
+                                class="tok-fn">build</span><span class="tok-punc">({</span></div>
+                        <div class="code-line"> <span class="tok-prop">design</span><span class="tok-punc">:</span>
+                            <span class="tok-str">"premium"</span><span class="tok-punc">,</span>
+                        </div>
+                        <div class="code-line"> <span class="tok-prop">performance</span><span class="tok-punc">:</span>
+                            <span class="tok-num">100</span><span class="tok-punc">,</span>
+                        </div>
+                        <div class="code-line"> <span class="tok-prop">responsivo</span><span class="tok-punc">:</span>
+                            <span class="tok-key">true</span><span class="tok-punc">,</span>
+                        </div>
+                        <div class="code-line"> <span class="tok-prop">cliente</span><span class="tok-punc">:</span>
+                            <span class="tok-str">"sua empresa"</span><span class="tok-punc">,</span>
+                        </div>
+                        <div class="code-line"><span class="tok-punc">});</span></div>
+                        <div class="code-line">&nbsp;</div>
+                        <div class="code-line"><span class="tok-var">experiencia</span><span
+                                class="tok-punc">.</span><span class="tok-fn">launch</span><span
+                                class="tok-punc">()</span><span class="code-cursor"></span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NOVO: Vídeo de fundo -->
+            <video class="hero-video-bg" autoplay loop muted playsinline
+                src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260405_170732_8a9ccda6-5cff-4628-b164-059c500a2b41.mp4">
+            </video>
+            <div class="hero-video-overlay" aria-hidden="true"></div>
+        </section>
+
+        <section class="value" id="valor">
+            <div class="container">
+                <div class="value-head" data-reveal>
+                    <p class="eyebrow">Posicionamento</p>
+                    <h2>Não criamos apenas sites. Criamos presença digital.</h2>
+                    <p style="color:var(--text-soft); margin-top:1rem;">Cada projeto é pensado para unir design,
+                        experiência do usuário, performance e estratégia.</p>
+                </div>
+                <div class="value-grid" data-reveal-group>
+                    <div class="value-card" data-reveal-item>
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <rect x="3" y="3" width="18" height="18" rx="2" />
+                            <line x1="9" y1="3" x2="9" y2="21" />
+                            <line x1="3" y1="9" x2="9" y2="9" />
+                        </svg>
+                        <h3>Design</h3>
+                        <p>Interfaces modernas, sofisticadas e alinhadas à identidade da marca.</p>
+                    </div>
+                    <div class="value-card" data-reveal-item>
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <polygon points="13,2 4,14 11,14 10,22 20,9 13,9" />
+                        </svg>
+                        <h3>Performance</h3>
+                        <p>Sites rápidos, responsivos e preparados para diferentes dispositivos.</p>
+                    </div>
+                    <div class="value-card" data-reveal-item>
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <path d="M5 3l14 6-6 2-2 6z" />
+                        </svg>
+                        <h3>Experiência</h3>
+                        <p>Navegação intuitiva e experiências pensadas para transformar visitantes em clientes.</p>
+                    </div>
+                    <div class="value-card" data-reveal-item>
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="8" />
+                            <circle cx="12" cy="12" r="4" />
+                            <circle cx="12" cy="12" r="0.6" fill="currentColor" stroke="none" />
+                        </svg>
+                        <h3>Estratégia</h3>
+                        <p>Cada seção possui um objetivo dentro da jornada do usuário.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="servicos">
+            <div class="container">
+                <div class="services-head" data-reveal>
+                    <div>
+                        <p class="eyebrow">Serviços</p>
+                        <h2>O que podemos construir para sua empresa?</h2>
+                    </div>
+                </div>
+                <div class="services-grid" data-reveal-group>
+
+                    <div class="service-card" data-reveal-item>
+                        <div class="service-card__top">
+                            <span class="service-card__num">01</span>
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <rect x="3" y="4" width="18" height="16" rx="2" />
+                                <line x1="3" y1="9" x2="21" y2="9" />
+                                <circle cx="6" cy="6.5" r="0.5" fill="currentColor" stroke="none" />
+                                <circle cx="8.5" cy="6.5" r="0.5" fill="currentColor" stroke="none" />
+                            </svg>
+                        </div>
+                        <h3>Sites Institucionais</h3>
+                        <p>Sites profissionais para empresas que precisam fortalecer sua presença digital.</p>
+                        <a class="link-arrow"
+                            href="https://wa.me/5547996838914?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20Sites%20Institucionais."
+                            target="_blank" rel="noopener">Saiba mais →</a>
+                    </div>
+
+                    <div class="service-card" data-reveal-item>
+                        <div class="service-card__top">
+                            <span class="service-card__num">02</span>
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <rect x="5" y="3" width="14" height="6" rx="1" />
+                                <rect x="5" y="11" width="14" height="6" rx="1" />
+                                <rect x="5" y="19" width="14" height="2" />
+                            </svg>
+                        </div>
+                        <h3>Landing Pages</h3>
+                        <p>Páginas focadas em conversão, campanhas e geração de leads.</p>
+                        <a class="link-arrow"
+                            href="https://wa.me/5547996838914?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20Landing%20Pages."
+                            target="_blank" rel="noopener">Saiba mais →</a>
+                    </div>
+
+                    <div class="service-card" data-reveal-item>
+                        <div class="service-card__top">
+                            <span class="service-card__num">03</span>
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M20 11a8 8 0 1 0-2.3 5.7" />
+                                <polyline points="20 4 20 11 13 11" />
+                            </svg>
+                        </div>
+                        <h3>Redesign</h3>
+                        <p>Transformação de sites antigos em experiências modernas e profissionais.</p>
+                        <a class="link-arrow"
+                            href="https://wa.me/5547996838914?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20Redesign."
+                            target="_blank" rel="noopener">Saiba mais →</a>
+                    </div>
+
+                    <div class="service-card" data-reveal-item>
+                        <div class="service-card__top">
+                            <span class="service-card__num">04</span>
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <circle cx="9" cy="20" r="1" />
+                                <circle cx="17" cy="20" r="1" />
+                                <path d="M3 4h2l2.2 11.1a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 8H6" />
+                            </svg>
+                        </div>
+                        <h3>E-commerce</h3>
+                        <p>Experiências digitais para empresas que desejam vender pela internet.</p>
+                        <a class="link-arrow"
+                            href="https://wa.me/5547996838914?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20E-commerce."
+                            target="_blank" rel="noopener">Saiba mais →</a>
+                    </div>
+
+                    <div class="service-card" data-reveal-item>
+                        <div class="service-card__top">
+                            <span class="service-card__num">05</span>
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <rect x="3" y="3" width="18" height="18" rx="2" />
+                                <line x1="9" y1="3" x2="9" y2="21" />
+                                <line x1="9" y1="14" x2="21" y2="14" />
+                            </svg>
+                        </div>
+                        <h3>UI/UX Design</h3>
+                        <p>Interfaces modernas, intuitivas e pensadas para o usuário.</p>
+                        <a class="link-arrow"
+                            href="https://wa.me/5547996838914?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20UI%2FUX%20Design."
+                            target="_blank" rel="noopener">Saiba mais →</a>
+                    </div>
+
+                    <div class="service-card" data-reveal-item>
+                        <div class="service-card__top">
+                            <span class="service-card__num">06</span>
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <polygon points="13,2 4,14 11,14 10,22 20,9 13,9" />
+                            </svg>
+                        </div>
+                        <h3>Performance</h3>
+                        <p>Otimização de velocidade, responsividade e experiência.</p>
+                        <a class="link-arrow"
+                            href="https://wa.me/5547996838914?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20Performance."
+                            target="_blank" rel="noopener">Saiba mais →</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projetos">
+            <div class="container">
+                <div class="projects-head" data-reveal>
+                    <p class="eyebrow">Portfólio</p>
+                    <h2>Projetos que falam por nós.</h2>
+                    <p style="color:var(--text-soft); margin-top:1rem;">Alguns dos projetos desenvolvidos pela Nexus.
+                    </p>
+                </div>
+
+                <article class="project" data-reveal>
+                    <div class="project-mock" data-tilt style="--g1:#1E2A55; --g2:#0A0A0C;">
+                        <div class="project-mock__bar"><span class="dot dot--r"></span><span
+                                class="dot dot--y"></span><span class="dot dot--g"></span></div>
+                        <div class="project-mock__body">
+                             <img src="./assets/img/projeto-atomax.webp" alt="Atomax">
+                        </div>
+                    </div>
+                    <div>
+                        <p class="project-tag">Indústria & Tecnologia</p>
+                        <h3>Atomax</h3>
+                        <p>Site institucional com foco em credibilidade técnica e apresentação de portfólio industrial.
+                        </p>
+                        <div class="project-stack"><span>Html5</span><span>CSS3</span><span>GSAP</span></div>
+                        
+                        <a class="link-arrow"
+                            href="https://atomax.com.br/"
+                            target="_blank" rel="noopener">Ver projeto →</a>
+                    </div>
+                </article>
+
+                <article class="project" data-reveal>
+                    <div class="project-mock" data-tilt>
+                        <div class="project-mock__bar"><span class="dot dot--r"></span><span
+                                class="dot dot--y"></span><span class="dot dot--g"></span></div>
+                        <div class="project-mock__body">
+                                <img src="./assets/img/projeto-flyseguros.webp" alt="Fly Corretora de Seguros">
+                        </div>
+                    </div>
+                    <div>
+                        <p class="project-tag">Seguros</p>
+                        <h3>Fly Corretora de Seguros</h3>
+                        <p>Landing institucional voltada à geração de leads qualificados para corretagem de seguros.</p>
+                        <div class="project-stack"><span>React</span><span>Tailwind</span><span>Figma</span></div>
+                        <a class="link-arrow"
+                            href="https://flycorretora.com/"
+                            target="_blank" rel="noopener">Ver projeto →</a>
+                    </div>
+                </article>
+
+                <article class="project" data-reveal>
+                    <div class="project-mock" data-tilt>
+                        <div class="project-mock__bar"><span class="dot dot--r"></span><span
+                                class="dot dot--y"></span><span class="dot dot--g"></span></div>
+                        <div class="project-mock__body">
+                              <img src="./assets/img/projeto-camilly.webp" alt="Camilly Estética">
+                        </div>
+                    </div>
+                    <div>
+                        <p class="project-tag">Estética & Beleza</p>
+                        <h3>Camilly Estética</h3>
+                        <p>Site com identidade delicada e conversão direta via WhatsApp para agendamentos.</p>
+                        <div class="project-stack"><span>Next.js</span><span>Framer Motion</span></div>
+                        <a class="link-arrow"
+                            href="https://camillyesteticafacial.netlify.app/"
+                            target="_blank" rel="noopener">Ver projeto →</a>
+                    </div>
+                </article>
+
+                <article class="project" data-reveal>
+                    <div class="project-mock" data-tilt>
+                        <div class="project-mock__bar"><span class="dot dot--r"></span><span
+                                class="dot dot--y"></span><span class="dot dot--g"></span></div>
+                        <div class="project-mock__body">
+                            <div class="project-mock__grad" style="background:linear-gradient(135deg,#1C3A2E,#0A0A0C);">
+                            </div>
+                            <div class="project-mock__lines"><span></span><span></span><span></span></div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="project-tag">Esporte & Eventos</p>
+                        <h3>Arena Viva</h3>
+                        <p>Plataforma institucional para divulgação de estrutura, agenda e reservas de espaço esportivo.
+                        </p>
+                        <div class="project-stack"><span>React</span><span>GSAP</span><span>Tailwind</span></div>
+                        <a class="link-arrow"
+                            href="https://wa.me/5547996838914?text=Ol%C3%A1!%20Vi%20o%20case%20Arena%20Viva%20no%20site%20da%20Nexus%20e%20quero%20algo%20parecido."
+                            target="_blank" rel="noopener">Ver projeto →</a>
+                    </div>
+                </article>
+
+                <article class="project" data-reveal>
+                    <div class="project-mock" data-tilt>
+                        <div class="project-mock__bar"><span class="dot dot--r"></span><span
+                                class="dot dot--y"></span><span class="dot dot--g"></span></div>
+                        <div class="project-mock__body">
+                            <div class="project-mock__grad" style="background:linear-gradient(135deg,#33321C,#0A0A0C);">
+                            </div>
+                            <div class="project-mock__lines"><span></span><span></span><span></span></div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="project-tag">Pet & Veterinária</p>
+                        <h3>Vida Pet</h3>
+                        <p>Site acolhedor com foco em serviços, produtos e contato rápido para tutores de pets.</p>
+                        <div class="project-stack"><span>Next.js</span><span>Tailwind</span></div>
+                        <a class="link-arrow"
+                            href="https://wa.me/5547996838914?text=Ol%C3%A1!%20Vi%20o%20case%20Vida%20Pet%20no%20site%20da%20Nexus%20e%20quero%20algo%20parecido."
+                            target="_blank" rel="noopener">Ver projeto →</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="ba">
+            <div class="container">
+                <div class="ba-head" data-reveal>
+                    <p class="eyebrow" style="justify-content:center;">Antes & Depois</p>
+                    <h2>Seu site pode estar afastando clientes.</h2>
+                </div>
+                <div class="compare" id="compareSlider" data-reveal>
+                    <div class="compare__panel compare__after">
+                        <div class="mock-grid"></div>
+                        <div class="mock-content">
+                            <div class="bar"></div>
+                            <div class="block"></div>
+                        </div>
+                        <span class="compare__label compare__label--after">Depois</span>
+                    </div>
+                    <div class="compare__panel compare__before">
+                        <div class="mock-content">
+                            <div class="bar"></div>
+                            <div class="row">
+                                <div class="col"></div>
+                                <div class="col"></div>
+                                <div class="col"></div>
+                            </div>
+                        </div>
+                        <span class="compare__label compare__label--before">Antes</span>
+                    </div>
+                    <div class="compare__handle"></div>
+                    <input type="range" class="compare__range" min="0" max="100" value="50"
+                        aria-label="Arraste para comparar antes e depois">
+                </div>
+                <div class="ba-cta">
+                    <a class="btn btn--primary" data-magnetic
+                        href="https://wa.me/5547996838914?text=Ol%C3%A1!%20Quero%20transformar%20meu%20site%20atual%20com%20a%20Nexus."
+                        target="_blank" rel="noopener">Quero transformar meu site</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="process" id="processo">
+            <div class="container">
+                <div class="process-head" data-reveal>
+                    <p class="eyebrow">Como funciona</p>
+                    <h2>Do primeiro contato ao lançamento.</h2>
+                </div>
+                <div class="process-track">
+                    <div class="process-line-bg"></div>
+                    <div class="process-progress"></div>
+
+                    <div class="process-step" data-step="01" data-reveal>
+                        <h3>Briefing</h3>
+                        <p>Entendemos sua empresa, objetivos e público.</p>
+                    </div>
+                    <div class="process-step" data-step="02" data-reveal>
+                        <h3>Estratégia</h3>
+                        <p>Definimos estrutura, conteúdo e direcionamento visual.</p>
+                    </div>
+                    <div class="process-step" data-step="03" data-reveal>
+                        <h3>Design</h3>
+                        <p>Criamos a interface e experiência do usuário.</p>
+                    </div>
+                    <div class="process-step" data-step="04" data-reveal>
+                        <h3>Desenvolvimento</h3>
+                        <p>Transformamos o design em um site funcional, responsivo e performático.</p>
+                    </div>
+                    <div class="process-step" data-step="05" data-reveal>
+                        <h3>Ajustes</h3>
+                        <p>Refinamos cada detalhe.</p>
+                    </div>
+                    <div class="process-step" data-step="06" data-reveal>
+                        <h3>Lançamento</h3>
+                        <p>Seu projeto vai para o ar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="diff">
+            <div class="container">
+                <div class="diff-head" data-reveal>
+                    <p class="eyebrow">Diferenciais</p>
+                    <h2>Por que Nexus?</h2>
+                </div>
+                <div class="diff-grid" data-reveal-group>
+                    <div class="diff-item" data-reveal-item>
+                        <div>
+                            <h3>Design personalizado</h3>
+                            <p>Nada de templates reaproveitados — cada identidade nasce do seu negócio.</p>
+                        </div>
+                    </div>
+                    <div class="diff-item" data-reveal-item>
+                        <div>
+                            <h3>Responsividade real</h3>
+                            <p>Testado e ajustado em cada breakpoint, não só redimensionado.</p>
+                        </div>
+                    </div>
+                    <div class="diff-item" data-reveal-item>
+                        <div>
+                            <h3>Performance como prioridade</h3>
+                            <p>Sites leves, rápidos e otimizados para Core Web Vitals.</p>
+                        </div>
+                    </div>
+                    <div class="diff-item" data-reveal-item>
+                        <div>
+                            <h3>Código moderno</h3>
+                            <p>Stack atual, de fácil manutenção e evolução futura.</p>
+                        </div>
+                    </div>
+                    <div class="diff-item" data-reveal-item>
+                        <div>
+                            <h3>UI/UX estratégico</h3>
+                            <p>Cada tela pensada para guiar o visitante até a conversão.</p>
+                        </div>
+                    </div>
+                    <div class="diff-item" data-reveal-item>
+                        <div>
+                            <h3>Animações com propósito</h3>
+                            <p>Microinterações que orientam, nunca que distraem.</p>
+                        </div>
+                    </div>
+                    <div class="diff-item" data-reveal-item>
+                        <div>
+                            <h3>Atendimento próximo</h3>
+                            <p>Contato direto durante todo o projeto, sem intermediários.</p>
+                        </div>
+                    </div>
+                    <div class="diff-item" data-reveal-item>
+                        <div>
+                            <h3>Desenvolvimento sob medida</h3>
+                            <p>Cada projeto resolve um problema específico do seu negócio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stack">
+            <div class="container">
+                <p class="eyebrow">Stack</p>
+                <div class="stack-row" data-reveal-group>
+                    <span class="stack-pill" data-reveal-item>HTML</span>
+                    <span class="stack-pill" data-reveal-item>CSS</span>
+                    <span class="stack-pill" data-reveal-item>JavaScript</span>
+                    <span class="stack-pill" data-reveal-item>React</span>
+                    <span class="stack-pill" data-reveal-item>Next.js</span>
+                    <span class="stack-pill" data-reveal-item>Tailwind</span>
+                    <span class="stack-pill" data-reveal-item>GSAP</span>
+                    <span class="stack-pill" data-reveal-item>Figma</span>
+                    <span class="stack-pill" data-reveal-item>Git</span>
+                    <span class="stack-pill" data-reveal-item>GitHub</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="sobre">
+            <div class="container about-inner">
+                <div data-reveal>
+                    <p class="eyebrow">Sobre a Nexus</p>
+                    <h2>Uma studio focada em criar experiências digitais melhores.</h2>
+                    <p>A Nexus nasceu da vontade de fazer diferente: sites que unem estética e função, sem cair no
+                        genérico. Cada projeto passa por um processo próprio de design e desenvolvimento, pensado para
+                        representar a marca do cliente com precisão.</p>
+                    <p>Trabalhamos lado a lado com empresas que entendem que presença digital é investimento, não gasto
+                        — e que um site bem construído é a primeira impressão que fica.</p>
+                </div>
+                <div class="about-visual" data-reveal aria-hidden="true">
+                    <div class="grid-mask"></div>
+                    <div class="core"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-main" id="contato">
+            <div class="hero-glow" aria-hidden="true"></div>
+            <div class="container">
+                <h2 data-reveal>Pronto para levar sua empresa para outro nível?</h2>
+                <p data-reveal>Vamos transformar sua ideia em uma experiência digital que realmente representa sua
+                    marca.</p>
+                <div class="hero-ctas" data-reveal>
+                    <a class="btn btn--primary" data-magnetic
+                        href="https://wa.me/5547996838914?text=Ol%C3%A1!%20Quero%20come%C3%A7ar%20meu%20projeto%20com%20a%20Nexus."
+                        target="_blank" rel="noopener">Começar meu projeto →</a>
+                    <a class="btn btn--ghost" data-magnetic href="https://wa.me/5547996838914" target="_blank"
+                        rel="noopener">Falar pelo WhatsApp</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#inicio" class="logo">Nexus Studio de Desenvolvimento Web<span>.</span></a>
+                    <p>Transformo ideias em sites.</p>
+                </div>
+                <div class="footer-cols">
+                    <div class="footer-col">
+                        <h4>Navegação</h4>
+                        <ul>
+                            <li><a href="#inicio">Início</a></li>
+                            <li><a href="#servicos">Serviços</a></li>
+                            <li><a href="#projetos">Projetos</a></li>
+                            <li><a href="#processo">Processo</a></li>
+                            <li><a href="#sobre">Sobre</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Redes</h4>
+                        <div class="footer-socials">
+                            <a href="https://www.instagram.com/nexusweb.design/" target="_blank" rel="noopener"
+                                aria-label="Instagram da Nexus">
+                                <svg class="icon" viewBox="0 0 24 24">
+                                    <rect x="3" y="3" width="18" height="18" rx="5" />
+                                    <circle cx="12" cy="12" r="4.2" />
+                                    <circle cx="17.2" cy="6.8" r="0.9" fill="currentColor" stroke="none" />
+                                </svg>
+                            </a>
+                            <a href="https://wa.me/5547996838914" target="_blank" rel="noopener"
+                                aria-label="WhatsApp da Nexus">
+                                <svg class="icon" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                                    <path
+                                        d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.6 14.3c-.2.7-1.4 1.3-2 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3.1 0-1.5.8-2.2 1-2.5.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5.2.5.7 1.8.8 1.9.1.1.1.3 0 .5-.1.2-.1.3-.3.5-.1.2-.3.4-.4.5-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.2 1.4 2.5 1.5.3.1.5.1.6-.1.2-.2.7-.8.9-1.1.2-.3.4-.2.6-.1.2.1 1.5.7 1.8.8.3.1.5.2.5.3.1.2.1.6-.1 1.2z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>Nexus Studio de Desenvolvimento Web</span>
+                <span>© 2026 Nexus. Todos os direitos reservados.</span>
+            </div>
+        </div>
+    </footer>
+
+    <a class="wa-float" id="waFloat" href="https://wa.me/5547996838914?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Nexus."
+        target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+            <path
+                d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.6 14.3c-.2.7-1.4 1.3-2 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3.1 0-1.5.8-2.2 1-2.5.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5.2.5.7 1.8.8 1.9.1.1.1.3 0 .5-.1.2-.1.3-.3.5-.1.2-.3.4-.4.5-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.2 1.4 2.5 1.5.3.1.5.1.6-.1.2-.2.7-.8.9-1.1.2-.3.4-.2.6-.1.2.1 1.5.7 1.8.8.3.1.5.2.5.3.1.2.1.6-.1 1.2z" />
+        </svg>
+    </a>
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
